@@ -1,0 +1,66 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  main {
+      display: flex;
+      font-size:large;
+      align-content: center;
+      justify-content: center;
+      align-items:center;
+      height: 100%;
+      width: 100%;
+  }
+  
+  footer {
+      flex: 0 50px;
+  }
+  
+  html {
+      height: 100%;
+  }
+  
+  #wordContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content:center;
+      justify-content: center;
+      width: 50%;
+      height: 70%;
+      overflow: auto;
+    }
+  
+    #outputDiv {
+      color: white;
+      height: auto;
+    }
+  
+  .word {
+      opacity: 0; /* Start with 0 opacity */
+      animation: fadeIn 0.5s forwards; /* Use the fadeIn animation */
+    }
+  
+  @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    @media (max-width: 1290px) {
+      #wordContainer {
+        width: 100%;
+        height: 100%;
+        margin: 5%;
+      }
+      .switch-to-row {
+          flex-direction: column-reverse;
+      }
+    }
