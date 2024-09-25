@@ -1,10 +1,10 @@
 const Home = () => {
     return (
-        <div>
-            <p>
+        <main>
+            <div>
                 This is a home page with static text.
-            </p>
-        </div>
+            </div>
+        </main>
     )
 }
 

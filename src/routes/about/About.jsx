@@ -11,7 +11,7 @@ const handleLoadAbout = (event) => {
 
 useEffect(() => {
   handleLoadAbout()
-}, [])
+}, [sentence])
 
   return (
 

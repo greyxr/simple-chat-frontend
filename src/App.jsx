@@ -4,6 +4,8 @@ import './app.css';
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import About from './routes/about/About.jsx';
 import Home from './routes/home/Home.jsx'
+import { MyNavbar } from './components/myNavbar.jsx';
+import SqlChat from './routes/sqlChat/sqlChat.jsx';
 
 
 export default function App() {
@@ -25,11 +27,12 @@ export default function App() {
         <Routes>
           <Route path={baseUrl + '/'} element={<Home />} exact />
           <Route path={baseUrl + '/about'} element={<About />} />
+          <Route path={baseUrl + '/chat'} element={<SqlChat />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
         <footer>
           <hr />
-          <Link to={baseUrl + "/about"}>About</Link>
+          <MyNavbar />
         </footer>
       </div>
     </BrowserRouter>

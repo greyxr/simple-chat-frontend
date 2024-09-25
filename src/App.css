@@ -11,10 +11,11 @@
 main {
   flex: 1;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   overflow:hidden;
   max-height:fit-content;
   height:auto;
+  bottom: 20%
 }
 
 header {
@@ -46,15 +47,15 @@ header {
   }
 }
 
-.invSection {
+/* .invSection {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: auto;
-}
+} */
 
-#invDiv {
+/* #invDiv {
   display: none;
   height: auto;
   width: 80%;
@@ -63,20 +64,20 @@ header {
 
 .gameSection {
   /* outline:solid; */
-  flex: 1;
+  /* flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.chatSection {
+/* .chatSection {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+} */ 
 
 #beginButton {
   height: 50px;
@@ -109,7 +110,6 @@ html {
   max-height: 50vh;
   margin: 5%;
   color: white;
-  display: none;
   overflow: auto;
 }
 
@@ -132,9 +132,8 @@ html {
 #input {
   margin: 20px;
   margin-top:10%;
-  display: none;
   width: 300px;
-  align-self: start;
+  align-self: center;
 }
 
 .bg-dark::placeholder {
